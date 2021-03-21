@@ -2,7 +2,7 @@
 
 import time
 
-CACHE = [0] + list(x ** x for x in range(1, 10))
+CACHE = [0] + [x ** x for x in range(1, 10)]
 
 
 def is_munchausen_old(num):
@@ -64,6 +64,7 @@ def main():
             "list_munchausen(100000)", max_run_count, delta, delta / max_run_count
         )
     )
+    print("Example result of list_munchausen(100000)", list_munchausen(100000))
     print("Finished")
 
 

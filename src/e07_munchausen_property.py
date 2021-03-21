@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-CACHE = [0] + list(x ** x for x in range(1, 10))
+CACHE = [0] + [x ** x for x in range(1, 10)]
 
 
 def is_munchausen(digit_counts, pow_sum):
